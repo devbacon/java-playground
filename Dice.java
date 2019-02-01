@@ -5,7 +5,11 @@ public class Dice {
 
   }
 
-  public static int roll(int sides) {
+  // public static int roll(int sides) {
     
+  // }
+
+  public static void testRand() {
+    System.out.println(Math.random());
   }
 }
