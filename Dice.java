@@ -1,15 +1,17 @@
-import java.lang.Math;
-
 public class Dice {
   public static void main(String[] args) {
-    System.out.println(roll(20));
+
   }
 
-  public static int roll(int sides) {
-    return (int) (Math.random() * sides + 1);
-  }
+  /*
+    Take in number of dice to be rolled and sides on each dice
+      (5, 6) => Totals up 5 rolls of a 6 sides dice
+  */
+  public static int roll(int numOfDice, int sidesOnDice) {
+    int max = numOfDice * sidesOnDice;
+    int min = numOfDice;
+    int range = max - min + 1;
 
-  public static double testRand() {
-    return Math.random();
+    return (int) (Math.random() * range) + min;
   }
 }
