@@ -9,7 +9,7 @@ public class Dice {
     
   // }
 
-  public static int testRand() {
+  public static double testRand() {
     return Math.random();
   }
 }
